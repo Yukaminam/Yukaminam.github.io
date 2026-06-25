@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yukaminam - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 100%;
+            padding: 50px 40px;
+            text-align: center;
+            animation: slideUp 0.6s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 60px;
+            font-weight: bold;
+            border: 5px solid #f0f0f0;
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .title {
+            font-size: 16px;
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .bio {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        .contact {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .contact-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: #f0f0f0;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .contact-link:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, #ddd, transparent);
+            margin: 30px 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+            font-size: 12px;
+            color: #999;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 25px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            .avatar {
+                width: 120px;
+                height: 120px;
+                font-size: 50px;
+            }
+
+            .bio {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Avatar -->
+        <div class="avatar">👤</div>
+
+        <!-- Name -->
+        <h1>Yukaminam</h1>
+        <div class="title">Lập Trình Viên | Nhà Phát Triển</div>
+
+        <!-- Divider -->
+        <div class="divider"></div>
+
+        <!-- Bio -->
+        <p class="bio">
+            Xin chào! Tôi là một lập trình viên đam mê công nghệ và luôn sẵn sàng học hỏi. Tôi thích giải quyết các vấn đề phức tạp và tạo ra những giải pháp sáng tạo.
+        </p>
+
+        <!-- Contact Links -->
+        <div class="contact">
+            <a href="mailto:yukatamin@gmail.com" class="contact-link" title="Email">
+                ✉️
+            </a>
+            <a href="https://linkedin.com/in/yourprofile" class="contact-link" title="LinkedIn">
+                💼
+            </a>
+            <a href="https://github.com/yukaminam" class="contact-link" title="GitHub">
+                💻
+            </a>
+            <a href="https://twitter.com/yourprofile" class="contact-link" title="Twitter">
+                🐦
+            </a>
+        </div>
+
+        <!-- CTA Button -->
+        <a href="mailto:yukatamin@gmail.com" class="cta-button">
+            Liên Hệ Tôi
+        </a>
+
+        <!-- Footer -->
+        <div class="footer">
+            © 2024 Yukaminam. Made with ❤️
+        </div>
+    </div>
+</body>
+</html>
